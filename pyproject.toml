@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "stopwatch"
+version = "0.1.0"
+description = "A simple stopwatch library with context manager and synthetic time injections"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+  { name="Felix Mohr", email="mail@felixmohr.de" }
+]
+keywords = ["stopwatch", "context manager", "injection"]
+dependencies = [
+    "psutil",
+    "numpy"
+]
+
+[project.urls]
+Homepage = "https://github.com/fmohr/stopwatch"
+Issues = "https://github.com/fmohr/stopwatchissues"
